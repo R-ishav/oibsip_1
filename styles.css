@@ -281,44 +281,44 @@ body {
 }
 
 .footer {
-    background-color: #fffdfd; /* Set the background color of the footer to a dark gray */
-    color: #f1eded; /* Set the text color of the footer to white */
-    padding: 10px; /* Add some padding to the footer */
-    text-align: center; /* Center the text in the footer */
+    background-color: #fffdfd; 
+    color: #f1eded; 
+    padding: 10px; 
+    text-align: center; 
   }
   
   .footer-container {
     background-color: #0e0d0d;
-    display: flex; /* Use flexbox to layout the footer sections */
-    justify-content: space-between; /* Space the footer sections evenly */
-     /* Vertically center the footer sections */
+    display: flex; 
+    justify-content: space-between; 
+     
   }
   
   .footer-section {
     
-    flex: 1; /* Set each footer section to take equal space */
-    margin: 20px; /* Add some margin to each footer section */
+    flex: 1; 
+    margin: 20px; 
   }
   
   .footer-section h3 {
     color: #f4f4f4;
-    font-size: 18px; /* Set the font size of the footer section headings */
-    margin-bottom: 10px; /* Add some margin below the footer section headings */
+    font-size: 18px;
+    margin-bottom: 10px; 
   }
   
 
   .footer-section li {
     color: #f4f4f4;
-    margin-bottom: 10px; /* Add some margin below each list item */
+    margin-bottom: 10px;
   }
   
   .footer-section a {
-    color: #f4f4f4; /* Set the link text color to white */
-    text-decoration: none; /* Remove the underline from the links */
+    color: #f4f4f4; 
+    text-decoration: none; 
   }
   
   .footer-section a:hover {
-    color: #ccc; /* Set the link text color to a light gray on hover */
+    color: #ccc; 
   }
   
   .fa {
