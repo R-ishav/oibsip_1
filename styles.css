@@ -1,0 +1,327 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background-section {
+    background-image: url('redprimebanner.jpeg');
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0;
+    margin-top: 0;
+    animation: changeBackground 16s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('redprimebanner.jpeg');
+    }
+    25% {
+        background-image: url('redprimebanner.jpeg');
+    }
+    50% {
+        background-image: url('blackandwhitebanner.png');
+    }
+    75% {
+        background-image: url('blackandwhitebanner.png');
+    }
+    100% {
+        background-image: url('redprimebanner.jpeg');
+    }
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    transition: background-color 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.left-nav {
+    margin-right: auto;
+}
+
+.left-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left-nav li {
+    margin-right: 20px;
+}
+
+.left-nav a {
+    color: #e6e0e0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.left-nav a:hover {
+    color: #0a0a0a;
+    border: 1px solid #e30f0f;
+    padding: 10px;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    animation: flicker 1s infinite;
+}
+
+.right-nav {
+    margin-left: auto;
+}
+
+.right-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.right-nav li {
+    margin-left: 20px;
+}
+
+.right-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.right-nav a:hover {
+    color: #0a0a0a;
+    border: 1px solid #e30f0f;
+    padding: 10px;
+}
+
+.right-nav img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-container:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.nav-container:hover .left-nav a {
+    color: #333;
+}
+
+.nav-container:hover .right-nav a {
+    color: #333;
+}
+
+.hero {
+    background-image: url('Strawberrybanana.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.products {
+    padding: 20px;
+}
+
+.products h2 {
+    font-family: "Vast Shadow", serif;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: #333;
+    width: 100%;
+    display: block;
+    padding: 2px;
+    font-size: 120px;
+    line-height: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.product h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-row .product {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-row .product img {
+    width: 170px;
+    height: 180px;
+}
+
+.product-row .product h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.product-row .product:hover::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 55, 55, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  .product-row .product .add-to-cart {
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c0c0c;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .product-row .product .add-to-cart:hover {
+    background-color: #f7f7f7;
+  }
+.video-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-image {
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #fffdfd; /* Set the background color of the footer to a dark gray */
+    color: #f1eded; /* Set the text color of the footer to white */
+    padding: 10px; /* Add some padding to the footer */
+    text-align: center; /* Center the text in the footer */
+  }
+  
+  .footer-container {
+    background-color: #0e0d0d;
+    display: flex; /* Use flexbox to layout the footer sections */
+    justify-content: space-between; /* Space the footer sections evenly */
+     /* Vertically center the footer sections */
+  }
+  
+  .footer-section {
+    
+    flex: 1; /* Set each footer section to take equal space */
+    margin: 20px; /* Add some margin to each footer section */
+  }
+  
+  .footer-section h3 {
+    color: #f4f4f4;
+    font-size: 18px; /* Set the font size of the footer section headings */
+    margin-bottom: 10px; /* Add some margin below the footer section headings */
+  }
+  
+
+  .footer-section li {
+    color: #f4f4f4;
+    margin-bottom: 10px; /* Add some margin below each list item */
+  }
+  
+  .footer-section a {
+    color: #f4f4f4; /* Set the link text color to white */
+    text-decoration: none; /* Remove the underline from the links */
+  }
+  
+  .footer-section a:hover {
+    color: #ccc; /* Set the link text color to a light gray on hover */
+  }
+  
+  .fa {
+    margin-right: 5px; /* Add some margin to the icons */
+  }
+  
